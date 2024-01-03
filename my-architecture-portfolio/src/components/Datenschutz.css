@@ -1,0 +1,17 @@
+/* Datenschutz.css */
+.container {
+    max-width: 800px; /* oder die gewünschte Breite */
+    margin: 0 auto; /* Zentriert den Container */
+    padding: 20px; /* Fügt etwas Platz innerhalb des Containers hinzu */
+    text-align: left; /* Setzt den Textfluss auf linksbündig */
+  }
+  
+  /* Optional: Allgemeine Stilregeln für Überschriften und Absätze */
+  h2, h3, h4, p, ul, li {
+    margin-bottom: 10px; /* Fügt einen Abstand nach unten für jedes Element hinzu */
+  }
+  
+  ul {
+    padding-left: 20px; /* Fügt Platz vor der Aufzählungsliste hinzu */
+  }
+  
