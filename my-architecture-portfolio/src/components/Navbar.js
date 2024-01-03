@@ -8,12 +8,13 @@ function Navbar() {
     <nav>
       <ul>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/projects">Projekte</Link></li>
-        <li><Link to="/cv">Lebenslauf</Link></li>
-        <li><Link to="/skills">Kenntnisse</Link></li>
-        <li><Link to="/philosophy">Philosophie</Link></li>
-        <li><Link to="/contact">Kontakt</Link></li>
-        <li><Link to="/legal">Impressum & Datenschutz</Link></li>
+        <li><Link to="/projekte">Projekte</Link></li>
+        <li><Link to="/lebenslauf">Lebenslauf</Link></li>
+        <li><Link to="/kenntnisse">Kenntnisse</Link></li>
+        <li><Link to="/philosophie">Philosophie</Link></li>
+        <li><Link to="/kontakt">Kontakt</Link></li>
+        <li><Link to="/impressum">Impressum</Link></li>
+        <li><Link to="/datenschutz">Datenschutz</Link></li>
       </ul>
     </nav>
   );

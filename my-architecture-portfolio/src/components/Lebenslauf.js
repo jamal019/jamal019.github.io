@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CV() {
+function Lebenslauf() {
   return (
     <div>
       <h2>Lebenslauf</h2>
@@ -9,4 +9,4 @@ function CV() {
   );
 }
 
-export default CV;
+export default Lebenslauf;

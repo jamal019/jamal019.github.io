@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Legal() {
+function Datenschutz() {
   return (
     <div>
-      <h2>Impressum & Datenschutz</h2>
+      <h2>Datenschutz</h2>
       {/* Impressum und Datenschutzerklärung */}
     </div>
   );
 }
 
-export default Legal;
+export default Datenschutz;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Skills() {
+function Kenntnisse() {
   return (
     <div>
       <h2>Kenntnisse und Fähigkeiten</h2>
@@ -9,4 +9,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Kenntnisse;

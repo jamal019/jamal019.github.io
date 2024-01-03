@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HomePage from './components/HomePage';
-import Projects from './components/Projects';
-import CV from './components/CV';
-import Skills from './components/Skills';
-import Philosophy from './components/Philosophy';
-import Contact from './components/Contact';
-import Legal from './components/Legal';
+import Home from './components/Home';
+import Projekte from './components/Projekte';
+import Lebenslauf from './components/Lebenslauf';
+import Kenntnisse from './components/Kenntnisse';
+import Philosophie from './components/Philosophie';
+import Kontakt from './components/Kontakt';
+import Impressum from './components/Impressum';
+import Datenschutz from './components/Datenschutz';
 import './App.css';
 
 function App() {
@@ -15,13 +16,14 @@ function App() {
     <Router>
       <Navbar /> {/* Hinzufügen der Navbar über den Routes */}
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/cv" element={<CV />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="/philosophy" element={<Philosophy />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/legal" element={<Legal />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/projekte" element={<Projekte />} />
+        <Route path="/lebenslauf" element={<Lebenslauf />} />
+        <Route path="/kenntnisse" element={<Kenntnisse />} />
+        <Route path="/philosophie" element={<Philosophie />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/impressum" element={<Impressum />} />
+        <Route path="/datenschutz" element={<Datenschutz />} />
       </Routes>
     </Router>
   );

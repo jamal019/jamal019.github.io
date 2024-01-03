@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Philosophy() {
+function Philosophie() {
   return (
     <div>
       <h2>Philosophie</h2>
@@ -9,4 +9,4 @@ function Philosophy() {
   );
 }
 
-export default Philosophy;
+export default Philosophie;
