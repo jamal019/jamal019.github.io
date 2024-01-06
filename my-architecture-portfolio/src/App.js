@@ -9,25 +9,29 @@ import Philosophie from './components/Philosophie';
 import Kontakt from './components/Kontakt';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
+import ProjektDetails from './components/Projektdetails';
+
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Navbar /> {/* Hinzufügen der Navbar über den Routes */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projekte" element={<Projekte />} />
-        <Route path="/lebenslauf" element={<Lebenslauf />} />
-        <Route path="/kenntnisse" element={<Kenntnisse />} />
-        <Route path="/philosophie" element={<Philosophie />} />
-        <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/impressum" element={<Impressum />} />
-        <Route path="/datenschutz" element={<Datenschutz />} />
-      </Routes>
+      <div className="main-content"> {/* Hinzufügen der main-content Klasse für den Abstand */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projekte" element={<Projekte />} />
+          <Route path="/lebenslauf" element={<Lebenslauf />} />
+          <Route path="/kenntnisse" element={<Kenntnisse />} />
+          <Route path="/philosophie" element={<Philosophie />} />
+          <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/impressum" element={<Impressum />} />
+          <Route path="/datenschutz" element={<Datenschutz />} />
+          <Route path="/projekte/:projektId" element={<ProjektDetails />} />
+        </Routes>
+      </div>
     </Router>
   );
 }
 
 export default App;
-

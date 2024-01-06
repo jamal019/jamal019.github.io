@@ -1,0 +1,16 @@
+/* ProjektDetails.css */
+.projekt-details-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .projekt-image-container {
+    text-align: center; /* Zentriert das Bild */
+  }
+  
+  .projekt-description {
+    margin-top: 20px;
+  }
+  

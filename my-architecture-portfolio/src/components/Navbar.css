@@ -1,31 +1,46 @@
-/* Datei: src/components/Navbar.css */
-nav {
-    background: #333;
-    color: white;
-    padding: 0.5rem;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin-right: 1rem;
-  }
-  
-  nav ul li:last-child {
-    margin-right: 0;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
+/* Navbar.css */
+.navbar {
+  background-color: #333; /* Dunkler Hintergrund für die Navbar */
+  height: 60px; /* Höhe der Navbar */
+  width: 100%; /* Navbar nimmt die volle Breite ein */
+  position: fixed; /* Fixiert die Navbar am oberen Rand */
+  top: 0; /* Setzt die Navbar an den oberen Rand des Viewports */
+  z-index: 1000; /* Stellt sicher, dass die Navbar über anderen Elementen liegt */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center; /* Zentriert die Elemente horizontal */
+  align-items: center; /* Zentriert die Elemente vertikal */
+  height: 100%;
+}
+
+.navbar-logo {
+  margin-right: 20px; /* Abstand zwischen Logo und Home */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px; /* Höhe des Logos */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 20px; /* Abstand zwischen den Menüpunkten */
+}
+
+.navbar-item {
+  color: white; /* Farbe der Menüpunkte */
+  text-decoration: none; /* Entfernt Unterstreichungen von Links */
+  padding: 10px 15px; /* Padding für die Menüpunkte */
+  transition: background 0.3s; /* Transition für Hover-Effekt */
+}
+
+.navbar-item:hover {
+  background-color: #555; /* Dunklerer Hintergrund beim Hovern */
+}
+
+.navbar-item.active {
+  border-bottom: 2px solid #fff;
+}
