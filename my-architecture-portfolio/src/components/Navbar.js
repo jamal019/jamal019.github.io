@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
-          <img src={process.env.PUBLIC_URL + '/testlogo.png'} alt="Logo" height="60" /> {/* Höhe des Logos anpassen */}
+          <img src='/my-architecture-portfolio/testlogo.png' alt="Logo" height="60" /> {/* Höhe des Logos anpassen */}
         </NavLink>
         <div className="navbar-menu">
           <NavLink to="/" className="navbar-item" activeClassName="active">Home</NavLink>

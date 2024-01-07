@@ -24,28 +24,28 @@ function Home() {
       <Slider {...settings}>
         <div>
           <Link to="/projekte/1">
-            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/beispiel1.jpg)` }}>
+            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/beispiel1.jpg)` }}>
               <div className="overlay">Projekt 1</div>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/projekte/2">
-            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/beispiel2.jpeg)` }}>
+            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/beispiel2.jpeg)` }}>
               <div className="overlay">Projekt 2</div>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/projekte/3">
-            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/akro.jpg)` }}>
+            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/akro.jpg)` }}>
               <div className="overlay">Projekt 3</div>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/projekte/4">
-            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
+            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/jimmy.png)` }}>
               <div className="overlay">Projekt 4</div>
             </div>
           </Link>
