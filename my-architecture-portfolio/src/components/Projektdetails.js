@@ -26,7 +26,7 @@ function ProjektDetails() {
     4: {
       title: "Projekt 4",
       description: "Beschreibung für Projekt 4",
-      image: "/jimmy.PNG"
+      image: "/jimmy.png"
     }
   };
 

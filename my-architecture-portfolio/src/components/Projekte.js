@@ -31,7 +31,7 @@ function Projekte() {
         </div>
         <div className="projekt-item">
           <Link to="/projekte/4">
-            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.PNG)` }}>
+            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
               <div className="overlay">Projekt 4</div>
             </div>
           </Link>

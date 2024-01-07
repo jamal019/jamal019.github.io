@@ -45,7 +45,7 @@ function Home() {
         </div>
         <div>
           <Link to="/projekte/4">
-            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.PNG)` }}>
+            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
               <div className="overlay">Projekt 4</div>
             </div>
           </Link>
