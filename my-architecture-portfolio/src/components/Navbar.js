@@ -12,9 +12,7 @@ function Navbar() {
         <div className="navbar-menu">
           <NavLink to="/" className="navbar-item" activeClassName="active">Home</NavLink>
           <NavLink to="/projekte" className="navbar-item" activeClassName="active">Projekte</NavLink>
-          <NavLink to="/lebenslauf" className="navbar-item" activeClassName="active">Lebenslauf</NavLink>
-          <NavLink to="/kenntnisse" className="navbar-item" activeClassName="active">Kenntnisse</NavLink>
-          <NavLink to="/philosophie" className="navbar-item" activeClassName="active">Philosophie</NavLink>
+          <NavLink to="/about" className="navbar-item" activeClassName="active">Über mich</NavLink>
           <NavLink to="/kontakt" className="navbar-item" activeClassName="active">Kontakt</NavLink>
           <NavLink to="/impressum" className="navbar-item" activeClassName="active">Impressum</NavLink>
           <NavLink to="/datenschutz" className="navbar-item" activeClassName="active">Datenschutz</NavLink>

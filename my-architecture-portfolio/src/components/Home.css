@@ -1,0 +1,50 @@
+/* Home.css */
+.home-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .slide {
+    position: relative;
+    height: 300px; /* Stellen Sie die gewünschte Höhe ein */
+    background-size: cover;
+    background-position: center;
+    margin: 0 15px; /* Fügen Sie Seitenabstand hinzu, wenn Sie variableWidth entfernen */
+  }
+  
+  .slide.active .overlay {
+    opacity: 1; /* Overlay nur auf aktiven Slide sichtbar machen */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    opacity: 0; /* Standardmäßig unsichtbar */
+    transition: opacity 0.5s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 10px;
+    }
+  
+    .slide {
+      height: 200px;
+      margin: 0 10px;
+    }
+  
+    .slide.active .overlay {
+      opacity: 1;
+    }
+  }
+  

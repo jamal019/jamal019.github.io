@@ -9,7 +9,6 @@ function Impressum() {
       <p>Melike Koc<br />
       Seidelbastweg 115<br />
       12357 Berlin<br />
-      Architektenkammer Berlin Nr. 77777<br />
       </p>
 
       <h3>Kontaktaufnahme:</h3>

@@ -1,0 +1,19 @@
+/* About.css */
+.about-container {
+    max-width: 800px; /* oder die gewünschte Breite */
+    margin: 0 auto; /* Zentriert den Container */
+    padding: 20px; /* Fügt etwas Platz innerhalb des Containers hinzu */
+    text-align: left; /* Setzt den Textfluss auf linksbündig */
+  }
+  
+  /* Optional: Allgemeine Stilregeln für Überschriften und Absätze */
+  .about-title, .about-subtitle, .about-paragraph, .about-list {
+    margin-bottom: 10px; /* Fügt einen Abstand nach unten für jedes Element hinzu */
+  }
+  
+  .about-list {
+    padding-left: 20px; /* Fügt Platz vor der Aufzählungsliste hinzu */
+  }
+  
+  /* Weitere Stile, falls benötigt, z.B. für Links, Buttons, etc. */
+  

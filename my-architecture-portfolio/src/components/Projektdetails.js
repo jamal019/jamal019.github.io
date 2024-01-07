@@ -17,6 +17,16 @@ function ProjektDetails() {
       title: "Rothaar-Piratenbande",
       description: "Die Rothaar-Piratenbande, geführt von Shanks, ist eine der mächtigsten Piratengruppen in 'One Piece'. Hier sind einige ihrer bemerkenswerten Mitglieder aufgelistet: ...",
       image: "/crew.jpg"
+    },
+    3: {
+      title: "Projekt 3",
+      description: "Beschreibung für Projekt 3",
+      image: "/akro.jpg"
+    },
+    4: {
+      title: "Projekt 4",
+      description: "Beschreibung für Projekt 4",
+      image: "/jimmy.PNG"
     }
   };
 
@@ -26,7 +36,7 @@ function ProjektDetails() {
     <div className="projekt-details-container">
       <h2>{project.title}</h2>
       <div className="projekt-image-container">
-        <img src={project.image} alt={project.title} width="960" height="540" />
+      <img src={process.env.PUBLIC_URL + project.image} alt={project.title} width="960" height="540" />
       </div>
       <p className="projekt-description">{project.description}</p>
       {/* Weitere Projektinformationen könnten hier hinzugefügt werden */}
