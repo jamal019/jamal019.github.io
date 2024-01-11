@@ -23,8 +23,8 @@ function Home() {
     <div className="home-container">
       <Slider {...settings}>
         <div>
-          <Link to="/projekte/1">
-            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/beispiel1.jpg)` }}>
+          <Link to="/projekte/hivegarden">
+            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/hivegarden1.jpg)` }}>
               <div className="overlay">Projekt 1</div>
             </div>
           </Link>

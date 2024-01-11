@@ -8,9 +8,9 @@ function Projekte() {
       <h2>Projektübersicht</h2>
       <div className="projekte-grid">
         <div className="projekt-item">
-          <Link to="/projekte/1">
-            <div className="projekt-image" style={{ backgroundImage: 'url(/my-architecture-portfolio/beispiel1.jpg)' }}>
-              <div className="overlay">Projekt 1</div>
+          <Link to="/projekte/hivegarden">
+            <div className="projekt-image" style={{ backgroundImage: 'url(/my-architecture-portfolio/hivegarden1.jpg)' }}>
+              <div className="overlay">Hive Garden</div>
             </div>
           </Link>
         </div>

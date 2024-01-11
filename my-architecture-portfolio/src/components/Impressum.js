@@ -15,11 +15,6 @@ function Impressum() {
       <p>Telefon: +49 1575 8864333<br />
       E-Mail: <a href="melikekoc10@hotmail.com">melikekoc10@hotmail.com</a></p>
 
-
-      <h3>Umsatzsteuer-ID:</h3>
-      <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:</p>
-      <p>DE Ihre USt-ID-Nummer</p>
-
       <h3>Haftungsausschluss – Disclaimer:</h3>
       <h4>Haftung für Inhalte</h4>
       <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen...</p>

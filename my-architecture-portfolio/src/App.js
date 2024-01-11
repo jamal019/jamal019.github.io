@@ -24,7 +24,7 @@ function App() {
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
-          <Route path="/projekte/:projektId" element={<ProjektDetails />} />
+          <Route path="/projekte/:projektTitel" element={<ProjektDetails />} />
         </Routes>
       </div>
     </Router>

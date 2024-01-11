@@ -1,16 +1,16 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import './Projektdetails.css'; // Stellen Sie sicher, dass Sie eine entsprechende CSS-Datei erstellen
+import './Projektdetails.css';
 
 function ProjektDetails() {
-  let { projektId } = useParams();
+  const { projektTitel } = useParams();
 
   // Hier ist ein Beispiel, wie Sie die Projektinformationen anzeigen könnten:
   const projectInfo = {
-    1: {
-      title: "Projekt 1",
-      description: "Beschreibung für Projekt 1",
-      image: "beispiel1.jpg"
+    hivegarden: {
+      title: "Hive Garden",
+      description: "Hier ist der Text für Hive Garden.",
+      images: ["/my-architecture-portfolio/hivegarden1.jpg", "/my-architecture-portfolio/hivegarden2.jpg", "/my-architecture-portfolio/hivegarden3.jpg", "/my-architecture-portfolio/hivegarden4.jpg", "/my-architecture-portfolio/hivegarden5.jpg", "/my-architecture-portfolio/hivegarden6.jpg"]
     },
     2: {
       title: "Rothaar-Piratenbande",
@@ -29,16 +29,15 @@ function ProjektDetails() {
     }
   };
 
-  const project = projectInfo[projektId] || projectInfo[1]; // Fallback auf Projekt 1, falls keine ID passt
+  const project = projectInfo[projektTitel.toLowerCase()] || projectInfo['default']; // 'default' kann durch den Titel eines Standardprojekts ersetzt werden
 
   return (
     <div className="projekt-details-container">
       <h2>{project.title}</h2>
-      <div className="projekt-image-container">
-        <img src={`/my-architecture-portfolio/${project.image}`} alt={project.title} />
-      </div>
+      {project.images.map((img, index) => (
+        <img key={index} src={img} alt={`Bild ${index + 1} von ${project.title}`} style={{ maxWidth: '100%', height: 'auto' }} />
+      ))}
       <p className="projekt-description">{project.description}</p>
-      {/* Weitere Projektinformationen könnten hier hinzugefügt werden */}
     </div>
   );
 }

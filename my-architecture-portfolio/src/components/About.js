@@ -8,11 +8,11 @@ function About() {
       
       <section className="about-section">
         <h3 className="about-subtitle">Wer bin ich?</h3>
-        <p>Mein Name ist Melike Koc, und ich bin eine engagierte und leidenschaftliche Architektin mit umfangreicher Erfahrung in verschiedenen Bereichen der Architektur und des Bauwesens. Mit einer starken technischen Grundlage und einem kreativen Herangehen an Designprozesse strebe ich danach, innovative Lösungen zu entwickeln, die sowohl ästhetisch ansprechend als auch funktional sind.</p>
+        <p>Mein Name ist Melike Koc, und ich bin eine engagierte und leidenschaftliche Architekturstudentin mit umfangreicher Erfahrung in verschiedenen Bereichen der Architektur und des Bauwesens. Mit einer starken technischen Grundlage und einem kreativen Herangehen an Designprozesse strebe ich danach, innovative Lösungen zu entwickeln, die sowohl ästhetisch ansprechend als auch funktional sind.</p>
       </section>
       
       <section className="about-section">
-        <h3 className="about-subtitle">Beruflicher Werdegang</h3>
+        <h3 className="about-subtitle">Lebenslauf</h3>
         <div className="professional-experience">
           <div className="experience-entry">
             <h4>02/2020 - 02/2021: Werkstudentin - Tempelbau GmbH</h4>
@@ -51,13 +51,6 @@ function About() {
         </div>
       </section>
       
-      <section className="about-section">
-        <h3 className="about-subtitle">Kenntnisse</h3>
-        <p>Meine technischen Fähigkeiten umfassen fortgeschrittene Kenntnisse in ArchiCAD, Photoshop, InDesign, Lumion und Rhinoceros. Diese Werkzeuge habe ich genutzt, um präzise architektonische Entwürfe zu erstellen, visuelle Präsentationen zu verbessern und immersive 3D-Modelle und Renderings zu entwickeln.</p>
-      </section>
-      
-      {/* Fügen Sie hier weitere Abschnitte nach Bedarf ein */}
-
     </div>
   );
 }
