@@ -30,23 +30,30 @@ function Home() {
           </Link>
         </div>
         <div>
-          <Link to="/projekte/rothaarpiratenbande">
-            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/crew.jpg)` }}>
-              <div className="overlay">Rothaar-Piratenbande</div>
+          <Link to="/projekte/goldbeck">
+            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/goldbeck1.jpg)` }}>
+              <div className="overlay">Village House Goldbeck</div>
             </div>
           </Link>
         </div>
         <div>
           <Link to="/projekte/projekt3">
-            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/akro.jpg)` }}>
-              <div className="overlay">Projekt 3</div>
+            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/cotti1.jpg)` }}>
+              <div className="overlay">Cotti Intervention</div>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/projekte/projekt4">
-            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
-              <div className="overlay">Projekt 4</div>
+          <Link to="/projekte/platzderzeit">
+            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/platzderzeit1.jpg)` }}>
+              <div className="overlay">Platz der Zeit</div>
+            </div>
+          </Link>
+        </div>
+        <div>
+          <Link to="/projekte/venedig">
+            <div className={`slide ${activeSlide === 4 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/venedig1.jpg)` }}>
+              <div className="overlay">Venedig</div>
             </div>
           </Link>
         </div>

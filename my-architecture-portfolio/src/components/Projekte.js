@@ -15,23 +15,30 @@ function Projekte() {
           </Link>
         </div>
         <div className="projekt-item">
-          <Link to="/projekte/rothaarpiratenbande">
-            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/crew.jpg)` }}>
-              <div className="overlay">Rothaar-Piratenbande</div>
+          <Link to="/projekte/goldbeck">
+            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/goldbeck1.jpg)` }}>
+              <div className="overlay">Village House Goldbeck</div>
             </div>
           </Link>
         </div>
         <div className="projekt-item">
-          <Link to="/projekte/projekt3">
-            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/akro.jpg)` }}>
-              <div className="overlay">Projekt 3</div>
+          <Link to="/projekte/cotti">
+            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/cotti1.jpg)` }}>
+              <div className="overlay">Cotti Intervention</div>
             </div>
           </Link>
         </div>
         <div className="projekt-item">
-          <Link to="/projekte/projekt4">
-            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
-              <div className="overlay">Projekt 4</div>
+          <Link to="/projekte/platzderzeit">
+            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/platzderzeit1.jpg)` }}>
+              <div className="overlay">Platz der Zeit</div>
+            </div>
+          </Link>
+        </div>
+        <div className="projekt-item">
+          <Link to="/projekte/venedig">
+            <div className="projekt-image" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/venedig1.jpg)` }}>
+              <div className="overlay">Venedig</div>
             </div>
           </Link>
         </div>

@@ -1,9 +1,11 @@
 /* Home.css */
 .home-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  background-color: #ffffff;
+}
   
   .slide {
     position: relative;
@@ -46,5 +48,9 @@
     .slide.active .overlay {
       opacity: 1;
     }
+  }
+
+  body {
+    background-color: #f5f5f5;
   }
   

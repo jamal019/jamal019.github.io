@@ -1,9 +1,10 @@
 /* About.css */
 .about-container {
-    max-width: 800px; /* oder die gewünschte Breite */
+    max-width: 960px; /* oder die gewünschte Breite */
     margin: 0 auto; /* Zentriert den Container */
     padding: 20px; /* Fügt etwas Platz innerhalb des Containers hinzu */
     text-align: left; /* Setzt den Textfluss auf linksbündig */
+    background-color: #ffffff;
   }
   
   /* Optional: Allgemeine Stilregeln für Überschriften und Absätze */
