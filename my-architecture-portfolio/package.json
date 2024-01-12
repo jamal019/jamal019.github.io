@@ -1,7 +1,7 @@
 {
   "name": "my-architecture-portfolio",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://jamal019.github.io/my-architecture-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

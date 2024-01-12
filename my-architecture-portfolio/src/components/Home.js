@@ -24,28 +24,28 @@ function Home() {
       <Slider {...settings}>
         <div>
           <Link to="/projekte/hivegarden">
-            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/hivegarden1.jpg)` }}>
-              <div className="overlay">Projekt 1</div>
+            <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/hivegarden1.jpg)` }}>
+              <div className="overlay">Hive Garden</div>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/projekte/2">
-            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/beispiel2.jpeg)` }}>
-              <div className="overlay">Projekt 2</div>
+          <Link to="/projekte/rothaarpiratenbande">
+            <div className={`slide ${activeSlide === 1 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/crew.jpg)` }}>
+              <div className="overlay">Rothaar-Piratenbande</div>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/projekte/3">
-            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/akro.jpg)` }}>
+          <Link to="/projekte/projekt3">
+            <div className={`slide ${activeSlide === 2 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/akro.jpg)` }}>
               <div className="overlay">Projekt 3</div>
             </div>
           </Link>
         </div>
         <div>
-          <Link to="/projekte/4">
-            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(/my-architecture-portfolio/jimmy.png)` }}>
+          <Link to="/projekte/projekt4">
+            <div className={`slide ${activeSlide === 3 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/jimmy.png)` }}>
               <div className="overlay">Projekt 4</div>
             </div>
           </Link>

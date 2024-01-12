@@ -8,15 +8,13 @@ import Kontakt from './components/Kontakt';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import ProjektDetails from './components/Projektdetails';
-
-
 import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Navbar /> {/* Hinzufügen der Navbar über den Routes */}
-      <div className="main-content"> {/* Hinzufügen der main-content Klasse für den Abstand */}
+    <Router basename={process.env.PUBLIC_URL}>
+      <Navbar />
+      <div className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projekte" element={<Projekte />} />
