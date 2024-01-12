@@ -18,3 +18,29 @@
   body {
     background-color: #f5f5f5;
   }
+
+  @media screen and (max-width: 768px) {
+    .projekt-details-container {
+      margin: 0 10px; /* Reduzieren Sie den Seitenabstand */
+      padding: 10px; /* Reduzieren Sie den Innenabstand */
+    }
+  
+    .projekt-header {
+      flex-direction: column; /* Stapeln Sie Bild und Text vertikal */
+      align-items: flex-start; /* Ausrichtung des Inhalts */
+    }
+  
+    .projekt-intro {
+      width: 100%; /* Vollständige Breite auf kleinen Bildschirmen */
+      margin-left: 0; /* Entfernen Sie den linken Abstand */
+    }
+  
+    .projekt-description {
+      font-size: 14px; /* Verkleinern Sie die Schriftgröße für bessere Lesbarkeit */
+    }
+  
+    img {
+      width: 100%; /* Bilder nehmen die volle Breite ein */
+      height: auto; /* Halten Sie das Seitenverhältnis der Bilder bei */
+    }
+  }
