@@ -70,13 +70,57 @@
   }
 
   .navbar-menu {
+    position: absolute;
+    top: 60px; /* Positioniert das Menü unterhalb der Navbar */
+    left: 0;
+    right: 0;
     display: none; /* Versteckt die Menüpunkte */
+    background-color: #333; /* Farbe der Navbar für das Menü */
     flex-direction: column; /* Stapelt die Links vertikal */
     align-items: center;
     width: 100%;
+    border-top: 1px solid #555; /* Grenze oben für Design */
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .navbar-menu.expanded {
     display: flex; /* Zeigt das Menü, wenn es erweitert ist */
+    flex-direction: column; /* Stapelt die Links vertikal */
+    padding: 0; /* Entfernt das Padding im Menü */
+    align-items: center; /* Zentriert die Menüelemente */
+    justify-content: flex-start; /* Beginnt am Anfang des Containers */
   }
-}
+
+  .navbar-item {
+    display: block; 
+    width: 100%; 
+    padding: 15px 20px; 
+    text-align: center; 
+    border-bottom: 2px solid transparent;
+    background-color: transparent; 
+    color: white; 
+    font-size: 16px; 
+    }
+
+  .navbar-item:last-child {
+    border-bottom: none; /* Entfernt die Trennlinie vom letzten Element */
+    }
+    
+  .navbar-item:hover {
+    background-color: #555; /* Dunklerer Hintergrund beim Hovern */
+    }
+    
+  .navbar-item.active {
+    background-color: #444; /* Hintergrund für aktiven Menüpunkt */
+    border-bottom: 2px solid #fff; /* Hervorhebung für aktiven Menüpunkt */
+    }
+
+
+    /* Zusätzliche Anpassungen für das Logo, um es responsiv zu gestalten */
+    .navbar-logo img {
+    height: auto; 
+    max-height: 60px; 
+    width: auto; 
+    }
+  }
