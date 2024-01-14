@@ -100,9 +100,102 @@ function ProjektDetails() {
         `${process.env.PUBLIC_URL}/venedig1.jpg`,
         `${process.env.PUBLIC_URL}/venedig2.jpg`
       ]
-    }
+    },
 
-  };
+  innovationszentrum: {
+    title: "Innovationszentrum Cottbus",
+    description: [
+        "Das Innovationszentrum besteht aus drei Volumen, die auseinander gezogen, geschoben und erhöht worden sind. Unsere Hauptkörper sind die Halle und der Bürokomplex. Als Zwischengang bzw. Fuge dient der vergrößerte Flur in der Mitte. Das Büro und der Zwischengang sind höher, als die Halle. Durch die Fuge gibt es eine permanente sicht in die Halle aber auch in die Büroräume oder den Ausstellungsbereich. Somit haben wir ein Zusammenspiel zwischen der Verwaltung und der Produktion.",
+        "Durch das rein versetzten der Fuge, wird der eingangsbereich als eine große Geste empfungen. Beim Eintreten bei den Volumen, wird man langsam in das Gebäude eingeführt und umschlossen. Im Gebäude gelangt man dann in alle Räumlichkeiten durch den Flur. Dieser muss benutzt werden um auf andere Etagen zu gelangen und auch in die Halle.",
+        "Alle drei Teile haben verschiedene Fassaden, jedoch mit Elementen des anderen Volumens. Während die Halle undurchsichtig gestaltet worden ist, ist der Flur oen und mit Glas verkleidet. Das Bürogebäude hat von beiden Fassaden Elemente angebracht. Hier gibt es eine Abwechslung mit offenen und geschlossenen Elementen. Die offenen Elemente sind Glas und die geschlossenen sind milchiges Polycarbonat. Durch das Polycarbonat an der Fassade der Halle, ist sie permanent mit natürlichem Licht versorgt. Nachts hingegen leuchtet die Halle und teile der Bürofassade, wie eine Laterne."
+      ],
+    images: [
+      `${process.env.PUBLIC_URL}/innovationszentrum1.jpg`,
+      `${process.env.PUBLIC_URL}/innovationszentrum2.jpg`,
+      `${process.env.PUBLIC_URL}/innovationszentrum3.png`,
+      `${process.env.PUBLIC_URL}/innovationszentrum4.png`,
+      `${process.env.PUBLIC_URL}/innovationszentrum5.jpg`,
+      `${process.env.PUBLIC_URL}/innovationszentrum6.png`
+    ]
+  },
+
+  hang: {
+    title: "Ausstellung am Hang",
+    description: [
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet."
+      ],
+    images: [
+      `${process.env.PUBLIC_URL}/hang1.png`,
+      `${process.env.PUBLIC_URL}/hang2.png`,
+      `${process.env.PUBLIC_URL}/hang3.png`,
+      `${process.env.PUBLIC_URL}/hang4.png`,
+      `${process.env.PUBLIC_URL}/hang5.png`,
+      `${process.env.PUBLIC_URL}/hang6.png`,
+      `${process.env.PUBLIC_URL}/hang7.png`
+
+    ]
+  },
+
+  busbahnhof: {
+    title: "Busbahnhof Cottbus Ostsee",
+    description: [
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet."
+      ],
+    images: [
+      `${process.env.PUBLIC_URL}/busbahnhof1.jpg`,
+      `${process.env.PUBLIC_URL}/busbahnhof2.png`,
+      `${process.env.PUBLIC_URL}/busbahnhof3.png`,
+      `${process.env.PUBLIC_URL}/busbahnhof4.png`,
+      `${process.env.PUBLIC_URL}/busbahnhof5.png`,
+      `${process.env.PUBLIC_URL}/busbahnhof6.png`
+    ]
+  },
+
+  skandale: {
+    title: "Diskothek Skandale",
+    description: [
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet."
+      ],
+    images: [
+      `${process.env.PUBLIC_URL}/skandale1.jpg`,
+      `${process.env.PUBLIC_URL}/skandale2.png`,
+      `${process.env.PUBLIC_URL}/skandale3.png`
+    ]
+  },
+
+  qasrnaous: {
+    title: "Nachbau vom Tempel Qasr Naous",
+    description: [
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet."
+      ],
+    images: [
+      `${process.env.PUBLIC_URL}/qasrnaous1.png`,
+      `${process.env.PUBLIC_URL}/qasrnaous2.png`,
+      `${process.env.PUBLIC_URL}/qasrnaous3.png`,
+      `${process.env.PUBLIC_URL}/qasrnaous4.png`
+    ]
+  },
+
+  unsichtbarestadt: {
+    title: "Nachbau vom Tempel Qasr Naous",
+    description: [
+      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+      "Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet."
+      ],
+    images: [`${process.env.PUBLIC_URL}/unsichtbarestadt1.jpg`
+    ]
+    }
+};
+
   
   const project = projectInfo[projektTitel.toLowerCase()] || projectInfo['default'];
 
