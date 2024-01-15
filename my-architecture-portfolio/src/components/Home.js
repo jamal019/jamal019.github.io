@@ -11,8 +11,8 @@ function Home() {
     dots: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '20%', // Erhöht den Wert, um mehr von den benachbarten Bildern zu zeigen
-    slidesToShow: 1, // Zeigt drei Slides auf einmal, mittlerer Slide wird zentral angezeigt
+    centerPadding: '20%',
+    slidesToShow: 1,
     speed: 500,
     focusOnSelect: true,
     cssEase: 'linear',
@@ -27,9 +27,11 @@ function Home() {
     return (
       <div
         className={`${className} custom-arrow next`}
-        style={{ ...style, display: "block", background: "#333", borderRadius: "50%" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
-      />
+      >
+        <i className="fa fa-chevron-right" aria-hidden="true"></i>
+      </div>
     );
   }
   
@@ -38,9 +40,11 @@ function Home() {
     return (
       <div
         className={`${className} custom-arrow prev`}
-        style={{ ...style, display: "block", background: "#333", borderRadius: "50%" }}
+        style={{ ...style, display: "block" }}
         onClick={onClick}
-      />
+      >
+        <i className="fa fa-chevron-left" aria-hidden="true"></i>
+      </div>
     );
   }
   
@@ -117,10 +121,15 @@ function Home() {
             </div>
           </Link>
         </div>
-
       </Slider>
-    </div>
-  );
+      <section className="welcome-message">
+      <h1>Willkommen auf meiner Website!</h1>
+      <p>
+        Ich bin Melike Koc und komme aus Berlin Neukölln. Meine Leidenschaft für Architektur wurzelt tief in meiner Vergangenheit und wurde durch den Bau des Familienhauses geweckt. Hier auf meiner Website lade ich euch ein, meine Projekte zu entdecken, die von innovativen Wohnkonzepten bis hin zu öffentlichen Räumen reichen, die Gemeinschaft und Kultur fördern. Jedes Design erzählt seine eigene Geschichte und spiegelt meine Vision von Architektur als Mittel zur Verbesserung des Alltagslebens wider.
+      </p>
+</section>
+</div>
+);
 }
 
 export default Home;
