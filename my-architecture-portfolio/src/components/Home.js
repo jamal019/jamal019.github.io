@@ -123,10 +123,22 @@ function Home() {
         </div>
       </Slider>
       <section className="welcome-message">
-      <h1>Willkommen auf meiner Website!</h1>
-      <p>
-        Ich bin Melike Koc und komme aus Berlin Neukölln. Meine Leidenschaft für Architektur wurzelt tief in meiner Vergangenheit und wurde durch den Bau des Familienhauses geweckt. Hier auf meiner Website lade ich euch ein, meine Projekte zu entdecken, die von innovativen Wohnkonzepten bis hin zu öffentlichen Räumen reichen, die Gemeinschaft und Kultur fördern. Jedes Design erzählt seine eigene Geschichte und spiegelt meine Vision von Architektur als Mittel zur Verbesserung des Alltagslebens wider.
-      </p>
+  <h1>Willkommen auf meiner Website!</h1>
+  <p>
+    Willkommen auf meiner Website, einem Schaufenster meiner architektonischen Visionen und Entwürfe. Als Architekturstudentin aus Berlin Neukölln habe ich es mir zur Aufgabe gemacht, nicht nur Räume, sondern auch Lebensgefühle zu kreieren. Von den lehrreichen Erfahrungen des Hausbaus meiner Eltern bis hin zu den herausfordernden Projekten meines Studiums, jede Linie auf dem Papier und jedes Modell im Raum ist für mich ein Schritt auf einer spannenden Reise durch die Welt der Architektur.
+  </p>
+  <p>
+    Ich lade dich ein, auf dieser Seite einige meiner bisherigen Arbeiten zu erkunden. Du wirst Projekte finden, die aus meiner tiefen Wertschätzung für nachhaltiges und sozial engagiertes Design hervorgegangen sind. Von innovativen Konzepten, die urbanes Grün in den Alltag integrieren, über Räume, die Gemeinschaft fördern, bis hin zu Interventionen, die bestehende Strukturen neu interpretieren – jedes Projekt ist ein Zeugnis meiner Leidenschaft für Architektur, die funktionell, ästhetisch und sozial verantwortlich ist.
+  </p>
+  <p>
+    Auf meiner Website präsentiere ich dir den "Hive Garden", ein Projekt, das eine verlassene Stadtecke in einen blühenden sozialen Treffpunkt verwandelt. Es spiegelt meine Vision wider, städtische Räume zu beleben und sie zu Orten des Zusammenkommens und der Gemeinschaft zu machen. Dann gibt es das "Village House Goldbeck", ein Projekt, das zeigt, wie moderne Wohnkonzepte und nachhaltige Bauweisen harmonisch miteinander verschmelzen können.
+  </p>
+  <p>
+    In der "Cotti Intervention" siehst du, wie ich einen städtischen Raum in Cottbus durch kreative Eingriffe verwandelt habe, um ihn lebenswerter und einladender zu machen. Und beim "Platz der Zeit" erkunden wir, wie historische und zeitgenössische Elemente in der Städteplanung aufeinandertreffen können, um einzigartige und lebendige öffentliche Plätze zu schaffen.
+  </p>
+  <p>
+    Diese und viele weitere Projekte sind das Ergebnis meiner akademischen Reise und meines persönlichen Engagements für Architektur. Jedes Projekt ist eine neue Gelegenheit, zu lernen, zu wachsen und die Grenzen dessen zu erweitern, was durch kreatives und nachhaltiges Design möglich ist.
+  </p>
 </section>
 </div>
 );

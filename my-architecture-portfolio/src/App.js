@@ -8,6 +8,7 @@ import Kontakt from './components/Kontakt';
 import Impressum from './components/Impressum';
 import Datenschutz from './components/Datenschutz';
 import ProjektDetails from './components/Projektdetails';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/projekte/:projektTitel" element={<ProjektDetails />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
