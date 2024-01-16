@@ -99,6 +99,7 @@ border: none;
     
     .slide {
     height: 300px; /* Kleinere Höhe der Slides auf mobilen Geräten */
+    margin: 0;
     }
     }
     

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram, FaTwitter, FaLinkedin, FaPinterest } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaLinkedin, } from 'react-icons/fa';
 import './Kontakt.css';
 
 function Kontakt() {

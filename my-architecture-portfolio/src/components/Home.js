@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import './Home.css'; 
@@ -7,19 +7,35 @@ import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
   const [activeSlide, setActiveSlide] = useState(0);
-  const settings = {
+
+  // Funktion, die die Slider-Einstellungen anpasst
+  const getSliderSettings = (isMobile) => ({
     dots: false,
     infinite: true,
     centerMode: true,
-    centerPadding: '20%',
+    centerPadding: isMobile ? '0px' : '20%',
     slidesToShow: 1,
     speed: 500,
     focusOnSelect: true,
     cssEase: 'linear',
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next) => setActiveSlide(next),
-  };
+    beforeChange: (current, next)=> setActiveSlide(next),
+  });
+
+  const [sliderSettings, setSliderSettings] = useState(getSliderSettings(window.innerWidth < 768));
+
+  useEffect(() => {
+    function handleResize() {
+      setSliderSettings(getSliderSettings(window.innerWidth < 768));
+    }
+
+    // Event Listener beim Laden des Components hinzufügen
+    window.addEventListener('resize', handleResize);
+
+    // Clean-up Funktion, entfernt den Event Listener beim Unmounten des Components
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   // Benutzerdefinierte Pfeil-Komponenten
   function SampleNextArrow(props) {
@@ -50,7 +66,7 @@ function Home() {
   
   return (
     <div className="home-container">
-      <Slider {...settings}>
+      <Slider {...sliderSettings}>
         <div>
           <Link to="/projekte/hivegarden">
             <div className={`slide ${activeSlide === 0 ? 'active' : ''}`} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/hivegarden1.jpg)` }}>
