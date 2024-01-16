@@ -1,6 +1,6 @@
 // Footer.js
 import React from 'react';
-import { FaInstagram, FaXing, FaLinkedin, FaPinterest } from 'react-icons/fa';
+import { FaInstagram, FaXing, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa';
 import './Footer.css';
 
 function Footer() {
@@ -10,8 +10,8 @@ function Footer() {
         <a href="https://www.instagram.com/deinBenutzername" target="_blank" rel="noopener noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://www.xing.com/profile/deinBenutzername" target="_blank" rel="noopener noreferrer">
-          <FaXing />
+        <a href="https://twitter.com/DeinTwitterHandle" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
         </a>
         <a href="https://www.linkedin.com/in/deinBenutzername" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />

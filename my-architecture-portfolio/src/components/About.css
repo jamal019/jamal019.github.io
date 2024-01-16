@@ -15,6 +15,21 @@
   .about-list {
     padding-left: 20px; /* Fügt Platz vor der Aufzählungsliste hinzu */
   }
+
+  /* Stil für den Container, der das Portrait enthält */
+.about-portrait-container {
+  text-align: center; /* Zentriert das Bild */
+  margin: 20px 0; /* Fügt oben und unten einen Abstand hinzu */
+}
+
+/* Stil für das Portrait-Bild */
+.about-portrait {
+  width: 200px; /* oder jede andere passende Größe */
+  height: auto; /* stellt sicher, dass das Bildverhältnis erhalten bleibt */
+  border-radius: 50%; /* macht das Bild rund */
+  border: 2px solid #333; /* Rahmen in der Farbe der Navbar, übernommen aus .projekt-item */
+  /* weitere Stile wie Rahmen, Schatten usw., falls gewünscht */
+}
   
   /* Weitere Stile, falls benötigt, z.B. für Links, Buttons, etc. */
   
