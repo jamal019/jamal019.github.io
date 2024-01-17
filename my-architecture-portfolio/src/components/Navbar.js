@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
-  const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const [isNavExpanded, setIsNavExpanded] = useState(false); // State, um den erweiterten Zustand des Navigationsmenüs zu verwalten
+
 
   return (
     <nav className="navbar">

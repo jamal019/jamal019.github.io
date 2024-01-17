@@ -1,108 +1,86 @@
 /* Home.css */
 
-/* Stil für den Slider-Container */
 .home-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: left;
-  background-color: #ffffff;
+  max-width: 1200px; 
+  margin: 0 auto; /* Zentriert den Container horizontal */
+  padding: 20px; /* Abstand innerhalb des Containers */
+  text-align: left; 
+  background-color: #ffffff; 
 }
 
 /* Stil für die Slides */
 .slide {
-  position: relative;
-  height: 550px; /* Höhe der Slide-Bilder */
-  background-size: cover;
-  background-position: center;
-  margin: 0 15px;
+  position: relative; /* Positionierung relativ zum Slider-Container */
+  height: 550px; 
+  background-size: cover; 
+  background-position: center; 
+  margin: 0 15px; 
 }
 
-/* Stil für das Overlay auf aktiven
-Slides */
+/* Stil für das Overlay auf aktiven Slides */
 .slide.active .overlay {
-opacity: 1;
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 20px;
-color: white;
-transition: opacity 0.5
-
-s ease;
-}
-
-.custom-arrow {
-position: absolute;
-top: 50%;
-transform: translate(0, -50%);
-font-size: 36px;
-z-index: 25;
-cursor: pointer;
-color: #555; 
-background: transparent;
-border: none;
-}
-
-.custom-arrow.prev {
-  left: 0;
-  transform: translateY(-50%) translateX(50%);
-  }
-  
-  .custom-arrow.next {
-  right: 0;
-  transform: translateY(-50%) translateX(-50%);
-  }
-  
-  /* Durchsichtige Leisten um die Pfeile */
-  .slick-prev,
-  .slick-next {
-  width: 100px;
-  /*width: calc(10% + 50px);*/
-  height: 100%;
-  top: 0;
-  bottom: 0;
+  opacity: 1; /* Overlay ist voll sichtbar bei aktiven Slides */
   position: absolute;
-  z-index: 9;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex; /* Flex-Container für die zentrierte Anordnung von Inhalten */
+  justify-content: center; 
+  align-items: center; 
+  font-size: 20px; 
+  color: white;
+  transition: opacity 0.5s ease; /* Weiche Übergangsanimation der Sichtbarkeit */
+}
+
+/* Stil für die Pfeile */
+.custom-arrow {
+  position: absolute; /* Absolute Positionierung innerhalb des Sliders */
+  top: 50%; /* Vertikale Position in der Mitte */
+  transform: translate(0, -50%); /* Verschiebung für die zentrierte Position */
+  font-size: 36px; /* Größe der Pfeil-Icons */
+  z-index: 25; 
+  cursor: pointer; /* Mauszeiger als Hinweis auf Klickbarkeit */
+  color: #555; /* Farbe der Pfeile */
+  background: transparent; 
+  border: none; 
+}
+
+/* Stil für den Zurück-Pfeil */
+.custom-arrow.prev {
+  left: 0; 
+  transform: translateY(-50%) translateX(50%); /* Verschiebung für die zentrierte Position */
+}
+  
+/* Stil für den Weiter-Pfeil */
+.custom-arrow.next {
+  right: 0; 
+  transform: translateY(-50%) translateX(-50%); /* Verschiebung für die zentrierte Position */
+}
+  
+/* Media Query für Anpassungen auf mobilen Geräten */
+@media (max-width: 768px) {
+
+  .custom-arrow {
+    font-size: 30px; /* Kleinere Größe der Pfeil-Icons */
   }
-  
-  .slick-prev { left: 0; }
-  .slick-next { right: 0; }
-  
-  /* Hover-Effekte für bessere Sichtbarkeit */
-  .custom-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 50%;
+    
+  .slick-prev, .slick-next {
+    width: 50px; /* Schmalere klickbare Leiste für Pfeile */
   }
-  
- 
-  @media (max-width: 768px) {
-    .custom-arrow {
-    font-size: 30px; 
-    }
     
-    .slick-prev,
-    .slick-next {
-    width: 50px; /* Schmalere klickbare Leiste auf mobilen Geräten */
-    }
-    
-    .home-container {
+  .home-container {
     padding: 10px; /* Kleinerer Innenabstand */
-    }
-    
-    .slide {
-    height: 300px; /* Kleinere Höhe der Slides auf mobilen Geräten */
-    margin: 0;
-    }
-    }
-    
-  body {
-  background-color: #f5f5f5; 
   }
+    
+  .slide {
+    height: 300px; /* Kleinere Höhe der Slides */
+    margin: 0; /* Kein Außenabstand */
+  }
+}
+
+/* Globale Stildefinition für den Hintergrund des Body-Elements */
+body {
+  background-color: #f5f5f5; 
+}

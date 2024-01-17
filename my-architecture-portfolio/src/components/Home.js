@@ -6,38 +6,39 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Home() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [activeSlide, setActiveSlide] = useState(0);   // Zustand, um den aktuell aktiven Slide zu verfolgen
 
   // Funktion, die die Slider-Einstellungen anpasst
   const getSliderSettings = (isMobile) => ({
-    dots: false,
-    infinite: true,
-    centerMode: true,
-    centerPadding: isMobile ? '0px' : '20%',
-    slidesToShow: 1,
-    speed: 500,
-    focusOnSelect: true,
-    cssEase: 'linear',
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
-    beforeChange: (current, next)=> setActiveSlide(next),
+    dots: false, // Keine Punkte unter dem Slider
+    infinite: true, // Endloses Schleifen des Sliders
+    centerMode: true, // Zentriert den aktiven Slide
+    centerPadding: isMobile ? '0px' : '20%', // Entfernt seitliche Polsterung auf Mobilgeräten
+    slidesToShow: 1, 
+    speed: 500, 
+    focusOnSelect: true, // Slide wählt bei Fokussierung
+    cssEase: 'linear', // Verwende eine lineare Animation
+    nextArrow: <SampleNextArrow />, 
+    prevArrow: <SamplePrevArrow />, 
+    beforeChange: (current, next) => setActiveSlide(next), // Aktualisiert den Zustand bei Slide-Änderung
   });
 
+  // Initialisiere Slider-Einstellungen basierend auf der aktuellen Bildschirmbreite
   const [sliderSettings, setSliderSettings] = useState(getSliderSettings(window.innerWidth < 768));
 
+  // Effekt-Hook, um Slider-Einstellungen beim Ändern der Fenstergröße zu aktualisieren
   useEffect(() => {
     function handleResize() {
       setSliderSettings(getSliderSettings(window.innerWidth < 768));
     }
 
-    // Event Listener beim Laden des Components hinzufügen
+    // Event-Listener beim Laden des Components hinzufügen
     window.addEventListener('resize', handleResize);
 
     // Clean-up Funktion, entfernt den Event Listener beim Unmounten des Components
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Benutzerdefinierte Pfeil-Komponenten
   function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -64,6 +65,7 @@ function Home() {
     );
   }
   
+  // Rendern der Komponenten
   return (
     <div className="home-container">
       <Slider {...sliderSettings}>

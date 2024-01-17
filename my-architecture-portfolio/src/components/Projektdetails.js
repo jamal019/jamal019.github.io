@@ -196,38 +196,45 @@ function ProjektDetails() {
     }
 };
 
+ // Ermittlung der Projektinformationen basierend auf dem URL-Parameter
+ const project = projectInfo[projektTitel.toLowerCase()] || projectInfo['default'];
+
+ // Funktion, die die Projektbeschreibung rendert
+ const renderDescription = (description) => {
+   // Prüft, ob die Beschreibung ein Array oder ein Objekt ist
+   if (Array.isArray(description)) {
+     // Rendert jeden Absatz der Beschreibung, wenn es sich um ein Array handelt
+     return description.map((paragraph, index) => <p key={index}>{paragraph}</p>);
+   } else if (typeof description === 'object') {
+     // Rendert die Beschreibung, wenn es sich um ein Objekt handelt
+     return Object.entries(description).map(([key, value]) => (
+       <div key={key}>
+         <h3>{key.replace(/_/g, ' ')}</h3>
+         {value.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
+       </div>
+     ));
+   }
+ };
   
-  const project = projectInfo[projektTitel.toLowerCase()] || projectInfo['default'];
-
-  const renderDescription = (description) => {
-    if (Array.isArray(description)) {
-      return description.map((paragraph, index) => <p key={index}>{paragraph}</p>);
-    } else if (typeof description === 'object') {
-      return Object.entries(description).map(([key, value]) => (
-        <div key={key}>
-          <h3>{key.replace(/_/g, ' ')}</h3>
-          {value.map((paragraph, index) => <p key={index}>{paragraph}</p>)}
-        </div>
-      ));
-    }
-  };
-
-  return (
-    <div className="projekt-details-container">
-      <h2>{project.title}</h2>
-      <div className="projekt-header">
-        {project.images && project.images[0] && (
-          <img src={project.images[0]} alt={`Hauptbild von ${project.title}`} style={{ maxWidth: '100%', height: 'auto' }} />
-        )}
-        <div className="projekt-intro">
-          {renderDescription(project.description)}
-        </div>
+ return (
+  <div className="projekt-details-container">
+    <h2>{project.title}</h2>
+    <div className="projekt-header">
+      {/* Anzeige des Hauptbildes des Projekts */}
+      {project.images && project.images[0] && (
+        <img src={project.images[0]} alt={`Hauptbild von ${project.title}`} style={{ maxWidth: '100%', height: 'auto' }} />
+      )}
+      {/* Rendert die Projektbeschreibung */}
+      <div className="projekt-intro">
+        {renderDescription(project.description)}
       </div>
-      {project.images && project.images.slice(1).map((img, index) => (
-        <img key={index} src={img} alt={`Bild ${index + 2} von ${project.title}`} style={{ maxWidth: '100%', height: 'auto' }} />
-      ))}
     </div>
-  );
+    {/* Rendert zusätzliche Bilder des Projekts */}
+    {project.images && project.images.slice(1).map((img, index) => (
+      <img key={index} src={img} alt={`Bild ${index + 2} von ${project.title}`} style={{ maxWidth: '100%', height: 'auto' }} />
+    ))}
+  </div>
+);
 }
 
 export default ProjektDetails;
