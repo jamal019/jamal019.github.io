@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './Projektdetails.css';
 
@@ -195,6 +195,11 @@ function ProjektDetails() {
     ]
     }
 };
+
+  // Scrollt zum Seitenanfang, wenn die Komponente geladen wird
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // Leeres Array als Abhängigkeit, um den Effekt nur beim Mounten der Komponente auszulösen
 
  // Ermittlung der Projektinformationen basierend auf dem URL-Parameter
  const project = projectInfo[projektTitel.toLowerCase()] || projectInfo['default'];
